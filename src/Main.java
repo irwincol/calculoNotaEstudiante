@@ -163,11 +163,11 @@ public class Main {
                 break;
             case "3":
                 System.out.println("Programa de Gastronomia");
-                System.out.println("Seleccione la materia:\n1 - tipografia \n2 - Iconografia\n3 - semantica");
+                System.out.println("Seleccione la materia:\n1 - Costos \n2 - panaderia dulce\n3 - cocina internacional");
                 materia = sc.nextLine();
                 switch (materia){
                     case "1":
-                        System.out.println("nota de Tipografia");
+                        System.out.println("nota de Costos");
                         System.out.println("Nota examen parcial (20%): ");
                         notaExamenParcial = sc.nextDouble();
                         System.out.println("Nota taller (30%): ");
@@ -176,9 +176,9 @@ public class Main {
                         notaFinal = sc.nextDouble();
                         notaMateria = (notaExamenParcial * 0.2) + (notaTaller * 0.3) + (notaFinal * 0.5);
 
-                        System.out.println("El estudiante " + nombreEstudiante + " tiene la siguiente calificación  en Tipografia:  " + notaMateria);
+                        System.out.println("El estudiante " + nombreEstudiante + " tiene la siguiente calificación  en Costos:  " + notaMateria);
                         if(notaMateria < 2){
-                            System.out.println("Perdio Definitivamente tipografia");
+                            System.out.println("Perdio Definitivamente costos");
                         } else if (notaMateria < 2.9){
                             System.out.println("tiene derecho a un plan de mejoramiento");
                         } else {
@@ -186,7 +186,7 @@ public class Main {
                         }
                         break;
                     case "2":
-                        System.out.println("nota de Iconografia: ");
+                        System.out.println("nota de Panaderia Dulce: ");
                         System.out.println("Nota examen parcial: ");
                         notaExamenParcial = sc.nextDouble();
                         System.out.println("Nota taller: ");
@@ -194,7 +194,7 @@ public class Main {
                         System.out.println("nota final:");
                         notaFinal = sc.nextDouble();
                         notaMateria = (notaExamenParcial * 0.2) + (notaTaller * 0.3) + (notaFinal * 0.5);
-                        System.out.println("El estudiante " + nombreEstudiante + " tiene la siguiente calificación en Iconografia:  " + notaMateria);
+                        System.out.println("El estudiante " + nombreEstudiante + " tiene la siguiente calificación en Panaderia Dulce:  " + notaMateria);
                         if(notaMateria < 2){
                             System.out.println("Perdio Definitivamente Iconografía");
                         } else if (notaMateria < 2.9){
